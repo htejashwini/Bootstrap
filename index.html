@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Pulse</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-info navbar-dark py-3">
+     <div class="container"> 
+        <a href='#' class="navbar-brand">pulse</a>
+        <button
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navmenu"
+            >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+     <div class="collapse navbar-collapse text-warning" id="navmenu">
+       <ul class="navbar-nav ms-auto">
+        <li class="nav-item ">
+            <a href="#learn" class="nav-link">Features</a> 
+        </li>
+        <li class="nav-item">
+            <a href="#questions" class="nav-link">Custom stories</a> 
+        </li>
+        <li class="nav-item">
+            <a href="#instructors" class="nav-link">Pricing</a> 
+        </li>
+        <li class="nav-item">
+            <a href="#instructors" class="nav-link">Blog</a> 
+        </li>
+        <li class="nav-item">
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Sign up</button> 
+        </li>
+      </ul>
+     </div>
+    </div>
+    </nav>
+
+     <!-- Modal -->
+    <div
+    class="modal fade"
+    id="enroll"
+    tabindex="-1"
+    aria-labelledby="enrollLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enrollLabel">Sign Up</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Take control of your cash flow with the #1 cash flow software.</p>
+          <form>
+            <div class="mb-3">
+              <label for="first-name" class="col-form-label">
+                First Name:
+              </label>
+              <input type="text" class="form-control" id="first-name" />
+            </div>
+            <div class="mb-3">
+              <label for="last-name" class="col-form-label">Last Name:</label>
+              <input type="text" class="form-control" id="last-name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="company name" class="col-form-label">Company Name:</label>
+              <input type="text" class="form-control" id="company-name" />
+            </div>
+            <div class="mb-3">
+                <label for="create pswd" class="col-form-label">Create Password:</label>
+                <input type="text" class="form-control" id="create pswd" />
+            </div>
+            <div class="mb-3">
+                <label for="confirm pswd" class="col-form-label">Confirm Password:</label>
+                <input type="text" class="form-control" id="confirm-pswd" />
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Exit
+          </button>
+          <button type="button" class="btn btn-primary">Sign in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <section class="bg-info text-dark p-5 pt-lg-10 text-center">
+        <div class="container">
+            <h1><font size="+30"><b>Try Pulse</span> free for 30 days.</b></font></h1>
+            <p>See why Pulse is the best way to monitor your cash flow. Sign up <br>for any plan and try Pulse absolutely free for 30 days.</p>
+        </div>
+    </section>
+
+
+    <section id="learn" class="bg-info p-5 bg-info text-dark">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+             <h2 class="main-text text-light" >These are what we call the<br> Pulse Basics. They’re what<br> every customer gets.</h2>
+              <ul>
+                <li>Manage cash flow on a daily,<br> weekly, monthly, or yearly basis</li>
+                <li>Forecast growth with recurring<br> income or expenses that scale<br> automatically</li>
+                <li>Works with any currency</li>
+                <li>See Money In and Money Out,<br> categorize transactions, and run<br> helpful reports</li>
+                <li>Toggle entries and accounts on<br> and off to game out different<br> scenarios</li>
+              </ul>
+              <p>Just need the Pulse Basics?<br><a href="url"> Get them now</a> for $29 per month.</p>
+            </div>
+          
+        
+        <div class="col-md g-5">
+            <div class="card bg-light text-dark">
+              <div class="card-body">
+                <h1 class="card-title mb-3 text-primary text-center "><b>Small<br> Business<br> Plan</b></h1>
+                <h3 class="card-title mb-3 text-center">$59 per month</h3>
+                <h2 class="card-title mb-3 text-center"><a href="signup.html" class="btn btn-primary">Sign Up Now</a></h2>
+                <p class="card-text  text-center">YOU GET PULSE BASICS, PLUS:</p>
+                <ul>
+                    <li>Manage cash flow across multiple financial<br> accounts</li>
+                    <li>Invite your investors, book keeper, or<br> management team to see reports or<br> manage cash flow</li>
+                    <li>Integrate with QuickBooks Online for more<br> accurate cash flow</li>
+                    <li>Track your actual cash flow alongside your<br> projected cash flow</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="col-md g-5">
+            <div class="card bg-light text-dark">
+              <div class="card-body">
+                <h1 class="card-title mb-3 text-primary text-center ">Unlock<br> Extra<br> Features</h1>
+                <h3 class="card-title mb-3 text-center">$89 per month</h3>
+                <h2 class="card-title mb-3 text-center"><a href="premium.html" class="btn btn-primary">Try Premium</a></h2>
+                <p class="card-text text-center">GET IT ALL, PLUS:</p>
+                <ul>
+                    <li>Manage cash flow across unlimited financial<br> accounts</li>
+                    <li>Convert to any currency for localized cash<br> flow reporting and projections</li>
+                    <li>Attach invoices or contracts to your cash<br> flow entries for accountability and auditing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="learn" class="bg-dark p-5 bg-info text-info">
+      <div class="container">
+          <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h1 class="main-text text-light text-center" ><a href="#learn" class="nav-link">Features</a></h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h5 class="card-title">Real-time Monitoring</h5>
+                    <p class="card-text">Monitor your cash flow in real-time with Pulse's advanced tracking system.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h5 class="card-title">Expense Tracking</h5>
+                    <p class="card-text">Effortlessly track your expenses and categorize them for better financial management.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h5 class="card-title">Budget Planning</h5>
+                    <p class="card-text">Plan your budget effectively with Pulse's budgeting feature and achieve your financial goals.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h5 class="card-title">Alerts and Notifications</h5>
+                    <p class="card-text">Receive alerts and notifications to stay informed about critical financial events.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stories" class="p-4 bg-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="col-md p-5">
+            <h1 class="main-text text-dark text-center" ><a href="#learn" class="nav-link">Custom stories</a></h1></div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card mb-4 bg-light">
+                  <img
+                  src="https://randomuser.me/api/portraits/women/11.jpg"
+                  class="rounded-circle mb-20 "     
+                  alt="" width="400" height="200"
+                  
+                />
+                  <div class="card-body">
+                    <h5 class="card-title">Expense Analysis</h5>
+                    <p class="card-text">Visualize your expenses with detailed analysis charts and graphs.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card mb-4 bg-light">
+                  <img
+                  src="https://randomuser.me/api/portraits/men/11.jpg"
+                  class="rounded-circle mb-3"
+                  alt="" width="400" height="200"
+                />
+                  <div class="card-body">
+                    <h5 class="card-title">Savings Goals</h5>
+                    <p class="card-text">Set savings goals and track your progress towards achieving them.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card mb-4 bg-light">
+                  <img
+                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  class="rounded-circle mb-3"
+                  alt="" width="400" height="200"
+                />
+                  <div class="card-body">
+                    <h5 class="card-title">Income Breakdown</h5>
+                    <p class="card-text">Analyze your income sources and understand your income breakdown.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card mb-4 bg-light">
+                  <img
+                  src="https://randomuser.me/api/portraits/women/12.jpg"
+                  class="rounded-circle mb-3"
+                  alt="" width="400" height="200"
+                />
+
+                  <div class="card-body">
+                    <h5 class="card-title">Cash Flow Forecasting</h5>
+                    <p class="card-text">Predict your future cash flow based on historical data and trends.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="questions" class="p-5">
+        <div class="container">
+          <h1 class="text-start mb-4"><b><font size="+20">FAQ</font></b></h1>
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <div class="accordion mt-4" id="accordionExample">
+
+               <!-- Item 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#question-four"
+                    >
+                    What types of payments do you accept?
+                    </button>
+                  </h2>
+                  <div
+                    id="question-four"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#questions"
+                  >
+                    <div class="accordion-body">
+                      We accept payments made online using visa, Mastercard, 
+                      Discover, and American Express.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+          <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2021 Frontend Bootcamp</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
